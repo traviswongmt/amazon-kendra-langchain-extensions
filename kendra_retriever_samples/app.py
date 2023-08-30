@@ -112,7 +112,8 @@ def write_top_bar():
             provider = PROVIDER_MAP[selected_provider]
         else:
             provider = selected_provider.capitalize()
-        header = f"An AI App powered by Amazon Kendra and {provider}!"
+        # header = f"An AI App powered by Amazon Kendra and {provider}!"
+        header = f"Hypthon Generative AI Chatbot"
         st.write(f"<h3 class='main-header'>{header}</h3>", unsafe_allow_html=True)
     with col3:
         clear = st.button("Clear Chat")
@@ -205,4 +206,4 @@ with st.container():
     write_chat_message(a, q)
 
 st.markdown('---')
-input = st.text_input("You are talking to an AI, ask any question.", key="input", on_change=handle_input)
+input = st.text_input("You are talking to Hypthon Generative AI Chatbot, ask any question.", key="input", on_change=handle_input)
