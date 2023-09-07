@@ -105,7 +105,7 @@ def write_logo():
 def write_top_bar():
     col1, col2, col3 = st.columns([1,10,2])
     with col1:
-        # st.image(AI_ICON, use_column_width='always')
+        st.image(AI_ICON, use_column_width='always')
     with col2:
         selected_provider = sys.argv[1]
         if selected_provider in PROVIDER_MAP:
